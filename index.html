@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snap Buy - Your Favorite E-Commerce Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>SnapBuy</h1>
+    <nav role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#" tabindex="0">Home</a></li>
+        <li><a href="#" tabindex="0">Shop</a></li>
+        <li><a href="#cart" tabindex="0"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="product-list" aria-label="Product listings">
+      <article class="product" data-name="Premium Watch" data-price="129.99">
+        <img src="https://media.istockphoto.com/id/1359180038/photo/wristwatch.jpg?s=612x612&w=0&k=20&c=AWkZ-gaLo601vG5eiQcsjYRjCjDxZdGL7v-jWvvAjEM=" alt="Premium luxury watch" />
+        <h2>Premium Watch</h2>
+        <p>$129.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Running Shoes" data-price="89.99">
+        <img src="https://t3.ftcdn.net/jpg/02/64/98/34/240_F_264983445_wXVAKMmZe0Q1jJN6R6riVJsajb7fGvx3.jpg" alt="Running shoes" />
+        <h2>Running Shoes</h2>
+        <p>$89.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Wireless Headphones" data-price="149.99">
+        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRwaG9uZXN8ZW58MHx8MHx8fDA%3D" alt="Wireless headphones" />
+        <h2>Wireless Headphones</h2>
+        <p>$149.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Smartphone" data-price="699.99">
+        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" alt="Latest smartphone" />
+        <h2>Smartphone</h2>
+        <p>$699.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Laptop" data-price="999.99">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww" alt="High-performance laptop" />
+        <h2>Laptop</h2>
+        <p>$999.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Smart Watch" data-price="199.99">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D" alt="Smart watch with fitness tracking" />
+        <h2>Smart Watch</h2>
+        <p>$199.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Bluetooth Speaker" data-price="79.99">
+        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZXRvb3RoJTIwc3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Portable Bluetooth speaker" />
+        <h2>Bluetooth Speaker</h2>
+        <p>$79.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Camera" data-price="449.99">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8fHww" alt="Digital camera" />
+        <h2>Camera</h2>
+        <p>$449.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Backpack" data-price="49.99">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFja3BhY2t8ZW58MHx8MHx8fDA%3D" alt="Durable backpack" />
+        <h2>Backpack</h2>
+        <p>$49.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Desk Lamp" data-price="39.99">
+        <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzayUyMGxhbXB8ZW58MHx8MHx8fDA%3D" alt="Modern desk lamp" />
+        <h2>Desk Lamp</h2>
+        <p>$39.99</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </article>
+    </section>
+
+    <aside id="cart" aria-label="Shopping cart">
+      <div class="cart-container">
+        <h2><i class="fas fa-shopping-cart"></i> Shopping Cart</h2>
+        <ul id="cart-items" aria-live="polite" aria-relevant="additions removals">
+          <li>No items in cart</li>
+        </ul>
+        <div class="cart-summary">
+          <p>Total: $<span id="total-price">0.00</span></p>
+          <button id="clear-cart" type="button" aria-label="Clear shopping cart">Clear Cart</button>
+          <button id="checkout-btn" type="button">Proceed to Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 Snap Buy. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
